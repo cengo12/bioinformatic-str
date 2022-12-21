@@ -87,6 +87,7 @@ if input_type == 'NCBI ID':
         gene_id, gene_sequence = get_seq(input_value)
         repeats = find_repeating_substrings(gene_sequence)
         st.write(pd.DataFrame(repeats.items(), columns=['Location', 'Sequence']))
+        st.write(gene_sequence)
     except:
         st.error("Invalid id or server error!")
 elif input_type == 'Name':
@@ -95,6 +96,7 @@ elif input_type == 'Name':
         gene_id, gene_sequence = get_seq(id)
         repeats = find_repeating_substrings(gene_sequence)
         st.write(pd.DataFrame(repeats.items(), columns=['Location', 'Sequence']))
+        st.write(gene_sequence)
     except:
         st.error("Invalid name or server error!")
 else:
