@@ -6,3 +6,5 @@ https://cengo12-bioinformatic-str-app-ef5shg.streamlit.app/
 # Project Report
 
 [bio-info.docx](https://github.com/cengo12/bioinformatic-str/files/10306428/bio-info.docx)
+
+Example ID for testing: NM_000875.5
